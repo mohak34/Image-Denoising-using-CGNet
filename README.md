@@ -2,7 +2,7 @@
 
 This project implements and compares multiple state-of-the-art deep learning models for image denoising, based on recent research papers.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ImageDenoise/
@@ -20,7 +20,7 @@ ImageDenoise/
 └── data/                  # Dataset directory
 ```
 
-## 🧠 Implemented Models
+## Implemented Models
 
 ### 1. **DnCNN** (Deep Convolutional Neural Network)
 
@@ -52,7 +52,7 @@ ImageDenoise/
 - **Key Features**: Deep unfolding, theoretical foundation
 - **Best for**: Robust performance, theoretical guarantees
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -81,7 +81,7 @@ Open any of the training notebooks:
 - `NAFNet_Training.ipynb` - State-of-the-art performance
 - `Model_Comparison.ipynb` - Compare all models
 
-## 📊 Dataset Support
+## Dataset Support
 
 - **MNIST**: Handwritten digits (28x28, grayscale)
 - **CIFAR-10**: Natural images (32x32, RGB)
@@ -93,7 +93,7 @@ Open any of the training notebooks:
 - **Speckle**: Multiplicative noise
 - **Salt & Pepper**: Impulse noise
 
-## 🎯 Key Features
+## Key Features
 
 ### Advanced Preprocessing:
 
@@ -121,19 +121,19 @@ Open any of the training notebooks:
 - L1 Loss (robust to outliers)
 - Charbonnier Loss (smooth L1, better convergence)
 
-## 📈 Performance Comparison
+## Performance Comparison
 
 Based on MNIST with Gaussian noise (σ=0.2):
 
-| Model  | PSNR (dB) | SSIM | Parameters | Training Time |
-| ------ | --------- | ---- | ---------- | ------------- |
-| DnCNN  | ~28.5     | 0.85 | 0.67M      | Fast          |
-| U-Net  | ~29.2     | 0.87 | 7.76M      | Medium        |
-| RCAN   | ~29.8     | 0.88 | 15.4M      | Slow          |
-| NAFNet | ~30.5     | 0.90 | 2.95M      | Medium        |
-| DRUNet | ~29.1     | 0.86 | 32.0M      | Slow          |
+| Model  | PSNR (dB) | SSIM | Parameters |
+| ------ | --------- | ---- | ---------- |
+| DnCNN  | ~28.5     | 0.85 | 0.67M      |
+| U-Net  | ~29.2     | 0.87 | 7.76M      |
+| RCAN   | ~29.8     | 0.88 | 15.4M      |
+| NAFNet | ~30.5     | 0.90 | 2.95M      |
+| DRUNet | ~29.1     | 0.86 | 32.0M      |
 
-## 🔬 Research Techniques Implemented
+## Research Techniques Implemented
 
 1. **Residual Learning**: Skip connections to learn noise patterns
 2. **Attention Mechanisms**: Channel and spatial attention for feature enhancement
@@ -141,7 +141,7 @@ Based on MNIST with Gaussian noise (σ=0.2):
 4. **Non-linear Activation Free**: Simplified architectures for better efficiency
 5. **Multi-scale Processing**: Encoder-decoder architectures for multi-resolution analysis
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Training with Custom Configuration:
 
@@ -177,22 +177,7 @@ for noise in noise_levels:
     print(f"Noise {noise}: PSNR = {test_psnr:.2f}dB")
 ```
 
-## 🎨 Visualization Features
-
-- **Training Curves**: Loss, PSNR, and SSIM over epochs
-- **Visual Comparisons**: Side-by-side noisy, denoised, and clean images
-- **Robustness Analysis**: Performance across different noise levels
-- **Model Comparison**: Comprehensive performance and efficiency analysis
-
-## 🏆 Best Practices Implemented
-
-1. **Proper Data Splitting**: Train/Validation/Test splits
-2. **Reproducible Results**: Fixed random seeds
-3. **Efficient Training**: Mixed precision, gradient clipping
-4. **Model Checkpointing**: Save best models automatically
-5. **Comprehensive Evaluation**: Multiple metrics and visual inspection
-
-## 📚 Citation
+## Citation
 
 If you use this code in your research, please cite the original papers:
 
@@ -211,16 +196,3 @@ If you use this code in your research, please cite the original papers:
   year={2022}
 }
 ```
-
-## 🤝 Contributing
-
-Feel free to contribute by:
-
-- Adding new model architectures
-- Implementing additional loss functions
-- Adding support for more datasets
-- Improving documentation
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
