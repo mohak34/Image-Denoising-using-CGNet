@@ -1,0 +1,14 @@
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.21.0
+matplotlib>=3.3.0
+Pillow>=8.0.0
+tqdm>=4.60.0
+scikit-image>=0.18.0
+kornia>=0.7.0
+torchmetrics>=0.11.0
+wandb>=0.15.0
+opencv-python-headless>=4.5.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
+tensorboard>=2.0.0
